@@ -1,0 +1,20 @@
+{
+    "name": "rpg/ptpdeux",
+    "description": "Perambulate the Pristine 2te Version",
+    "type": "project",
+    "license": "mit",
+    "autoload": {
+        "psr-4": {
+            "Rpg\\Ptpdeux\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sami Teuchert"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "ext-readline": "*"
+    }
+}
