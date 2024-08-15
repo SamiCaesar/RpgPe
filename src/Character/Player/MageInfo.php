@@ -12,11 +12,8 @@ class MageInfo extends CharacterAtt
     }
 
 
-    public function show(): array
+    public function show($name,$exp,$lvl,$hp,$ap,$af): string
     {
-        return [
-            "name" => $this->name,
-            "exp" => $this->exp
-        ];
+        return ($name.$exp.$lvl.$hp.$ap.$af);
     }
 }

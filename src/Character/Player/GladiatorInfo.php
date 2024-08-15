@@ -9,7 +9,6 @@ class GladiatorInfo extends CharacterAtt
     public function __construct()
     {
         parent::__construct("Gladiator",1,1,130,6,1.2,4,1.6,3,0.3,3,0.6,4,1.5);
-
     }
 
     public function show($name,$exp,$lvl,$hp): string

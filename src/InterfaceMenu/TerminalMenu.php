@@ -131,7 +131,7 @@ class TerminalMenu
                 public function getChar(): string
                 {
                     $char = 0;
-                    return ShowChar::library($char);
+                    return ShowChar::library();
                 }
     public function getTitle(): string
     {
