@@ -10,7 +10,6 @@ class ShowChar
 {
 
 
-
     public function library($type)
     {
         switch ($type) {

@@ -23,7 +23,7 @@ $loadChar = new TerminalMenu("Charakter laden","laden");
 $library = new TerminalMenu("Übersicht bekannter Figuren","archiv");
 $battleMenu = new TerminalMenu("Kampfmenü","kampf");
 $attackMenuItem = new TerminalMenu("Angriff","hit");
-
+$attackMenu = new TerminalMenu("Angriff","hi");
         // Methode implementieren und ausführen, wenn "hit" benutzt wird.
                 /**
                 $attackMenuItem->addAction(function() use($cloud,$tifa) {
