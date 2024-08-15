@@ -13,10 +13,12 @@ class ShowChar
         $gladiator = new GladiatorInfo();
         $mage = new MageInfo();
 
+        readline("Charakter: ");
+
         return match ($char) {
             'Gladiator' => $gladiator->show("Gladiator", 1, 1, 130, false, 1.2, 4, 1.6, 3, 0.3, 3, 0.6, 4, 1.5),
                  'Mage' => $mage->show("Gladiator", 1, 1, 130, false, 1.2, 4, 1.6, 3, 0.3, 3, 0.6, 4, 1.5),
-                default => "Charakter, jibb et nich",
+                default => "Charakter, jibb et nich\n",
         };
 
     }

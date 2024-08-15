@@ -12,9 +12,9 @@ class GladiatorInfo extends CharacterAtt
 
     }
 
-    public function show($name,$exp,): string
+    public function show($name,$exp,$lvl,$hp): string
     {
-
+        return ($name.$exp.$lvl.$hp);
     }
 
 

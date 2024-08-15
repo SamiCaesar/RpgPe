@@ -82,7 +82,6 @@ class TerminalMenu
         self::renderMenu(true);
 
 
-
         while (true) {
             $inputFound = false;
             $input = strtolower(readline("Aktion: "));
@@ -109,6 +108,7 @@ class TerminalMenu
             }
 
                             if($input == 'laden') {
+                                Out::printLn("GLADIATOR   MAGE   ... under construction..");
                                 echo $this->getChar();
             }
 
