@@ -136,21 +136,11 @@ abstract class CharacterAtt
     public function setCf(float $cf): void                  {   $this->cf = $cf;    }
 
 
-    /**
-     * @return int
-     */
-    public function getExp(): int
-    {
-        return $this->exp;
-    }
+                    /**     * @return int     */
+    public function getExp(): int                           {   return $this->exp;  }
 
-    /**
-     * @param int $exp
-     */
-    public function setExp(int $exp): void
-    {
-        $this->exp = $exp;
-    }
+                    /**     * @param int $exp     */
+    public function setExp(int $exp): void                  {   $this->exp = $exp;  }
 
     /**
      * @return int

@@ -10,13 +10,22 @@ class GladiatorInfo extends CharacterAtt
     {
         parent::__construct("Gladiator",1,1,130,6,1.2,4,1.6,3,0.3,3,0.6,4,1.5);
 
-        // return  $this->name. $this->exp;
     }
 
-    public function show(): array
+    public function show($name,$exp,): string
     {
-//        return " Hallo {$name}.{$exp}.{$lvl} ";
 
+    }
+
+
+
+
+
+
+
+
+       // return parent::$Gladiator;
+/**
         return [
             "name"  =>  $this->name,
             "exp"   =>  $this->exp,
@@ -31,11 +40,9 @@ class GladiatorInfo extends CharacterAtt
             "agf"   =>  $this->agf,
             "dop"   =>  $this->dop,
             "dof"   =>  $this->dof
-        ];
+        ]; */
 
 
-
-    }
                             /**
                                 public static function createCharacter($type)
                                 {

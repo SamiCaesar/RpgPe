@@ -3,9 +3,12 @@
 namespace Rpg\Ptpdeux\InterfaceMenu;
 
 use JetBrains\PhpStorm\NoReturn;
+use Rpg\Ptpdeux\Character\Player\GladiatorInfo;
+use Rpg\Ptpdeux\Character\Player\MageInfo;
 use Rpg\Ptpdeux\System\Out;
 use Rpg\Ptpdeux\System\TextColor;
 use Rpg\Ptpdeux\InterfaceMenu\ShowChar;
+use Rpg\Ptpdeux\System\BackgroundColor;
                                                                     use Closure;
 
 
@@ -105,8 +108,8 @@ class TerminalMenu
 
             }
 
-            if($input == 'laden') {
-                 ShowChar::library();
+                            if($input == 'laden') {
+                                echo $this->getChar();
             }
 
             if (in_array($input, ['exit', 'bye', 'quit'])) {
@@ -124,19 +127,16 @@ class TerminalMenu
             }
         }
     }
-                            /**
-                                private static function library(): void
-                                {
-                                    foreach ($this->input2 = $input2) {
-                                        return $this->show();
-                                    }
-                                }
-                            */
+
+                public function getChar(): string
+                {
+                    $char = 0;
+                    return ShowChar::library($char);
+                }
     public function getTitle(): string
     {
         return $this->title;
     }
-
     public function getKey(): string
     {
         return $this->key;
